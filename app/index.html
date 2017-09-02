@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Students selector</title>
+		<title>Wizard selector</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/app.css"/>
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript" src="js/app.js"></script>
+		<section>
+			<section id="UI">
+				<img id="Hat" src="asset/img/hat.png"/>
+				<section id="AppSetup">
+					<label>Number of wizards to sort:</label>
+					<input id="NumberSorcerer" type="number" value="30"/>
+					<input id="StartSelection" type="button" value="Start!"/>
+				</section>
+				<section id="SorcererSelector" class="hidden">
+					<p id="ResultSelection" class="Result">Where to put you?</p>
+				</section>
+			</section>
+			<section id="Households">
+				<div id="Gryffindor" class="Household">
+					<img src="asset/img/gryffindor.gif"/>
+					<legend>Gryffindor</legend>
+				</div>
+				<div id="Hufflepuff" class="Household">
+					<img src="asset/img/hufflepuff.jpg"/>
+					<legend>Hufflepuff</legend>
+				</div>
+				<div id="Ravenclaw" class="Household">
+					<img src="asset/img/ravenclaw.jpg"/>
+					<legend>Ravenclaw</legend>
+				</div>
+				<div id="Slytherin" class="Household">
+					<img src="asset/img/slytherin.png"/>
+					<legend>Slytherin</legend>
+				</div>
+			</section>
+		</section>
+		<footer>
+			<script type="text/javascript" src="js/app.js"></script>
+		</footer>
 	</body>
 </html>

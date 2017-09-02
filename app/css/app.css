@@ -1,0 +1,35 @@
+body {
+	display: block;
+}
+#UI {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#Hat {
+	margin: auto;
+	width: 300px;
+}
+#Households {
+	text-align: center;
+	width: 100%;
+}
+.Household {
+	text-align: center;
+	display: inline-block;
+}
+.Household img {
+	width: 200px;
+	height: 230px;
+}
+.Household legend {
+	width: 100%;
+	font-weight: bold;
+}
+.selected {
+	border-style: solid;
+	border-color: red;
+}
+.hidden {
+	display: none;
+}
