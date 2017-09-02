@@ -1,10 +1,9 @@
 $(document).ready(function(){
 	$("#StartSelection").on("click", onStartSelection);
-	$("#Hat").on("click", onStartHouseholdSelection);
 });
 
 var Households = { 
-"numberSorcerer":0 
+"numberSorcerer":30 
 ,"maxPerHouse":0 
 ,"nbSwitch":0 
 ,"nextHouse":"Gryffindor" 
@@ -27,6 +26,8 @@ function onStartSelection(){
 
 	var maxPerHouse = Math.ceil(numberSorcerer / 4.0);
 	Households["maxPerHouse"] = maxPerHouse;
+
+	$("#Hat").on("click", onStartHouseholdSelection);
 }
 
 function onStartHouseholdSelection(){
